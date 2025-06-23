@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nimbus Tech - Scalable Web Applications for Modern Businesses</title>
-    <meta name="description" content="Nimbus Tech builds scalable, high-performance web applications for modern businesses. Expert remote-first IT services with proven methodology.">
+    <title>Nimbus Solutions - Scalable Web Applications for Modern Businesses</title>
+    <meta name="description" content="Nimbus Solutions builds scalable, high-performance web applications for modern businesses. Expert remote-first IT services with proven methodology.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,6 +25,7 @@
             }
         }
     </script>
+    <script src="data.js" defer></script>
     <style>
         .animate-float {
             animation: float 6s ease-in-out infinite;
@@ -54,14 +55,48 @@
         <div class="container mx-auto px-6">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-nimbus-gradient rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-10 4.7 4.7 0 00-.1-1A5 5 0 008 3.5a4.88 4.88 0 00-4.5 3A4.1 4.1 0 003 15z"/>
-                        </svg>
-                    </div>
-                    <div class="text-xl font-bold">
-                        <span class="text-nimbus-blue">NIMBUS</span>
-                        <span class="text-nimbus-dark">TECH</span>
+                    <svg width="60" height="40" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                        <defs>
+                            <linearGradient id="navCloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="navBarGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+                                <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="navDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.1"/>
+                            </filter>
+                        </defs>
+                        <g filter="url(#navDropShadow)">
+                            <circle cx="50" cy="45" r="25" fill="url(#navCloudGradient)"/>
+                            <circle cx="75" cy="40" r="28" fill="url(#navCloudGradient)"/>
+                            <circle cx="100" cy="45" r="25" fill="url(#navCloudGradient)"/>
+                            <circle cx="35" cy="55" r="18" fill="url(#navCloudGradient)"/>
+                            <circle cx="65" cy="60" r="22" fill="url(#navCloudGradient)"/>
+                            <circle cx="95" cy="60" r="20" fill="url(#navCloudGradient)"/>
+                            <circle cx="115" cy="55" r="16" fill="url(#navCloudGradient)"/>
+                            <circle cx="55" cy="30" r="15" fill="url(#navCloudGradient)"/>
+                            <circle cx="85" cy="28" r="18" fill="url(#navCloudGradient)"/>
+                        </g>
+                        <circle cx="20" cy="35" r="2" fill="#667eea" opacity="0.6"/>
+                        <circle cx="12" cy="50" r="3" fill="#764ba2" opacity="0.5"/>
+                        <circle cx="135" cy="30" r="2.5" fill="#667eea" opacity="0.7"/>
+                        <circle cx="145" cy="45" r="1.5" fill="#764ba2" opacity="0.6"/>
+                        <circle cx="130" cy="65" r="2" fill="#667eea" opacity="0.5"/>
+                        <rect x="45" y="70" width="4" height="12" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="53" y="65" width="4" height="17" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="61" y="68" width="4" height="14" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="69" y="62" width="4" height="20" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="77" y="66" width="4" height="16" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="85" y="64" width="4" height="18" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="93" y="69" width="4" height="13" rx="2" fill="url(#navBarGradient)"/>
+                        <rect x="101" y="67" width="4" height="15" rx="2" fill="url(#navBarGradient)"/>
+                    </svg>
+                    <div class="text-container" style="display: flex; flex-direction: column;">
+                        <div class="nimbus-text" style="font-size: 20px; font-weight: 700; color: #2c3e50; letter-spacing: 0.5px; line-height: 1; margin: 0; font-family: inherit;">NIMBUS</div>
+                        <div class="solutions-text" style="font-size: 10px; font-weight: 400; color: #7f8c8d; letter-spacing: 2px; margin: 0; margin-top: 1px; font-family: inherit; text-transform: uppercase;">SOLUTIONS</div>
                     </div>
                 </div>
                 
@@ -115,14 +150,50 @@
                     </div>
                 </div>
                 <div class="relative hidden lg:block">
-                    <div class="animate-float">
-                        <div class="w-96 h-96 bg-nimbus-gradient rounded-3xl mx-auto relative overflow-hidden">
-                            <div class="absolute inset-4 bg-white/10 rounded-2xl backdrop-blur-sm"></div>
-                            <div class="absolute inset-8 bg-white/20 rounded-xl backdrop-blur-sm"></div>
-                            <div class="absolute inset-12 bg-white/30 rounded-lg backdrop-blur-sm flex items-center justify-center">
-                                <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
+                    <div class="animate-float flex items-center justify-center">
+                        <div class="logo-container" style="display: flex; align-items: center; gap: 16px;">
+                            <svg width="160" height="110" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="heroCloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    </linearGradient>
+                                    <linearGradient id="heroBarGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+                                        <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+                                    </linearGradient>
+                                    <filter id="heroDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+                                    </filter>
+                                </defs>
+                                <g filter="url(#heroDropShadow)">
+                                    <circle cx="50" cy="45" r="25" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="75" cy="40" r="28" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="100" cy="45" r="25" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="35" cy="55" r="18" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="65" cy="60" r="22" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="95" cy="60" r="20" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="115" cy="55" r="16" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="55" cy="30" r="15" fill="url(#heroCloudGradient)"/>
+                                    <circle cx="85" cy="28" r="18" fill="url(#heroCloudGradient)"/>
+                                </g>
+                                <circle cx="20" cy="35" r="2" fill="#667eea" opacity="0.6"/>
+                                <circle cx="12" cy="50" r="3" fill="#764ba2" opacity="0.5"/>
+                                <circle cx="135" cy="30" r="2.5" fill="#667eea" opacity="0.7"/>
+                                <circle cx="145" cy="45" r="1.5" fill="#764ba2" opacity="0.6"/>
+                                <circle cx="130" cy="65" r="2" fill="#667eea" opacity="0.5"/>
+                                <rect x="45" y="70" width="4" height="12" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="53" y="65" width="4" height="17" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="61" y="68" width="4" height="14" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="69" y="62" width="4" height="20" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="77" y="66" width="4" height="16" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="85" y="64" width="4" height="18" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="93" y="69" width="4" height="13" rx="2" fill="url(#heroBarGradient)"/>
+                                <rect x="101" y="67" width="4" height="15" rx="2" fill="url(#heroBarGradient)"/>
+                            </svg>
+                            <div class="text-container" style="display: flex; flex-direction: column;">
+                                <div class="nimbus-text" style="font-size: 56px; font-weight: 700; color: #2c3e50; letter-spacing: 1px; line-height: 1; margin: 0; font-family: inherit;">NIMBUS</div>
+                                <div class="solutions-text" style="font-size: 20px; font-weight: 400; color: #7f8c8d; letter-spacing: 4px; margin: 0; margin-top: 2px; font-family: inherit; text-transform: uppercase;">SOLUTIONS</div>
                             </div>
                         </div>
                     </div>
@@ -139,34 +210,7 @@
                     Comprehensive web application development services tailored for modern business needs
                 </p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <div class="w-16 h-16 bg-nimbus-gradient rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Custom Web Applications</h3>
-                    <p class="text-nimbus-gray">Scalable, high-performance applications built with modern frameworks and best practices for maximum efficiency.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <div class="w-16 h-16 bg-nimbus-gradient rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Frontend Excellence</h3>
-                    <p class="text-nimbus-gray">Component-based architecture using Next.js, React, and modern state management for exceptional user experiences.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <div class="w-16 h-16 bg-nimbus-gradient rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-10 4.7 4.7 0 00-.1-1A5 5 0 008 3.5a4.88 4.88 0 00-4.5 3A4.1 4.1 0 003 15z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Cloud-Native Solutions</h3>
-                    <p class="text-nimbus-gray">AWS-powered serverless architecture with microservices, API gateways, and CDN optimization for global performance.</p>
-                </div>
+            <div id="core-services-container" class="grid md:grid-cols-3 gap-8">
             </div>
         </div>
     </section>
@@ -174,53 +218,18 @@
     <section id="why-us" class="py-20">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">The Nimbus Tech Advantage</h2>
+                <h2 class="text-4xl font-bold mb-4">The Nimbus Solutions Advantage</h2>
                 <p class="text-xl text-nimbus-gray max-w-2xl mx-auto">
                     Your strategic partner for web application success
                 </p>
             </div>
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-nimbus-teal rounded-full flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Integrated Expertise</h3>
-                            <p class="text-nimbus-gray">Technical excellence combined with marketing integration and strategic business consulting for comprehensive solutions.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-nimbus-teal rounded-full flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Remote-First Advantages</h3>
-                            <p class="text-nimbus-gray">Cost-effective solutions with access to global talent, flexible scheduling, and reduced overhead costs.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-nimbus-teal rounded-full flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Proven Methodology</h3>
-                            <p class="text-nimbus-gray">Agile development with predictable timelines, transparent budgeting, and comprehensive quality assurance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="w-full h-96 bg-nimbus-gradient rounded-3xl p-8 flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-6xl font-bold mb-4">95%</div>
-                            <div class="text-xl">Client Satisfaction Rate</div>
-                        </div>
+            <div id="why-us-container" class="space-y-8">
+            </div>
+            <div class="relative">
+                <div class="w-full h-96 bg-nimbus-gradient rounded-3xl p-8 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <div class="text-6xl font-bold mb-4">95%</div>
+                        <div class="text-xl">Client Satisfaction Rate</div>
                     </div>
                 </div>
             </div>
@@ -235,43 +244,7 @@
                     From concept to deployment, we provide end-to-end web application development services using cutting-edge technologies
                 </p>
             </div>
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <h3 class="text-2xl font-bold mb-4 text-nimbus-blue">Frontend Frameworks</h3>
-                    <p class="text-nimbus-gray mb-6">Component-based architecture with modern state management and performance optimization.</p>
-                    <ul class="space-y-2 text-nimbus-gray">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>Next.js & React Ecosystem</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>TypeScript Integration</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>Vue.js & Angular Alternatives</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <h3 class="text-2xl font-bold mb-4 text-nimbus-blue">Backend Architecture</h3>
-                    <p class="text-nimbus-gray mb-6">Scalable server-side solutions with microservices and efficient database management.</p>
-                    <ul class="space-y-2 text-nimbus-gray">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>Node.js (Express.js, Microservices)</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>Python (Django, Flask, FastAPI)</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>Database Optimization</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <h3 class="text-2xl font-bold mb-4 text-nimbus-blue">Cloud-Native Development</h3>
-                    <p class="text-nimbus-gray mb-6">Serverless architecture with AWS services for maximum scalability and performance.</p>
-                    <ul class="space-y-2 text-nimbus-gray">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>AWS Lambda & API Gateway</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>RDS, DynamoDB, CloudFront CDN</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>Multi-cloud Capabilities</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <h3 class="text-2xl font-bold mb-4 text-nimbus-blue">API-First Development</h3>
-                    <p class="text-nimbus-gray mb-6">RESTful and GraphQL APIs with comprehensive documentation and testing.</p>
-                    <ul class="space-y-2 text-nimbus-gray">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>RESTful API Design</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>GraphQL Implementation</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>OpenAPI Documentation</li>
-                    </ul>
-                </div>
+            <div id="tech-stack-container" class="grid lg:grid-cols-2 gap-12">
             </div>
         </div>
     </section>
@@ -284,43 +257,7 @@
                     User-centric, scalable, and strategic approach to web application development
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-nimbus-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">User-Centric Design</h3>
-                    <p class="text-nimbus-gray">Every decision focused on optimal user experience and business outcomes.</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-nimbus-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Agile Methodology</h3>
-                    <p class="text-nimbus-gray">Iterative development with continuous feedback and rapid adaptation to changes.</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-nimbus-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Robust Architecture</h3>
-                    <p class="text-nimbus-gray">Scalable foundations built for growth and long-term sustainability.</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-nimbus-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Security First</h3>
-                    <p class="text-nimbus-gray">Performance optimization with comprehensive security measures built-in.</p>
-                </div>
+            <div id="philosophy-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             </div>
         </div>
     </section>
@@ -333,31 +270,7 @@
                     Case studies showcasing our expertise in delivering scalable solutions across industries
                 </p>
             </div>
-            <div class="grid lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3">E-commerce Platform</h3>
-                        <p class="text-nimbus-gray mb-4">Scalable online marketplace with real-time inventory management and payment processing.</p>
-                        <div class="text-nimbus-teal font-semibold">300% increase in online sales</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3">SaaS Application</h3>
-                        <p class="text-nimbus-gray mb-4">Multi-tenant platform with advanced analytics and automated workflow management.</p>
-                        <div class="text-nimbus-teal font-semibold">Successful Series A funding</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3">Corporate Portal</h3>
-                        <p class="text-nimbus-gray mb-4">Enterprise-grade internal platform with user management and document sharing capabilities.</p>
-                        <div class="text-nimbus-teal font-semibold">50% efficiency improvement</div>
-                    </div>
-                </div>
+            <div id="portfolio-container" class="grid lg:grid-cols-3 gap-8">
             </div>
         </div>
     </section>
@@ -365,7 +278,7 @@
     <section id="about" class="py-20">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">About Nimbus Tech</h2>
+                <h2 class="text-4xl font-bold mb-4">About Nimbus Solutions</h2>
                 <p class="text-xl text-nimbus-gray max-w-3xl mx-auto">
                     We are a remote-first IT services company dedicated to building scalable, high-performance web applications that drive business success
                 </p>
@@ -383,62 +296,27 @@
                 </div>
                 <div class="bg-nimbus-gradient rounded-3xl p-8 text-white">
                     <h3 class="text-2xl font-bold mb-6">Core Values</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            Excellence in execution
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            Transparent communication
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            Continuous innovation
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            Client-centric approach
-                        </li>
+                    <ul id="core-values-list" class="space-y-4">
                     </ul>
                 </div>
             </div>
             <div class="text-center">
                 <h3 class="text-3xl font-bold mb-8">Leadership Team</h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-2xl hover-lift">
-                        <div class="w-24 h-24 bg-nimbus-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
-                            <span class="text-2xl font-bold text-white">SS</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Saqib Sohail</h4>
-                        <p class="text-nimbus-teal font-semibold mb-3">Chief Technology Officer</p>
-                        <p class="text-nimbus-gray">Leading technical architecture and innovation with expertise in scalable web applications and cloud technologies.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl hover-lift">
-                        <div class="w-24 h-24 bg-nimbus-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
-                            <span class="text-2xl font-bold text-white">AM</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Ahsan Mirza</h4>
-                        <p class="text-nimbus-teal font-semibold mb-3">Head of Marketing & Digital Growth</p>
-                        <p class="text-nimbus-gray">Driving strategic marketing initiatives and digital growth strategies for comprehensive business solutions.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-2xl hover-lift">
-                        <div class="w-24 h-24 bg-nimbus-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
-                            <span class="text-2xl font-bold text-white">US</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Umair Saleem</h4>
-                        <p class="text-nimbus-teal font-semibold mb-3">Chief Business Officer</p>
-                        <p class="text-nimbus-gray">Overseeing business operations, client relationships, and strategic partnerships for sustainable growth.</p>
-                    </div>
+                <div id="leadership-team-container" class="grid md:grid-cols-3 gap-8">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Meet Our Talented Team</h2>
+                <p class="text-xl text-nimbus-gray max-w-2xl mx-auto">
+                    Our diverse team of experts is dedicated to bringing your vision to life.
+                </p>
+            </div>
+            <div id="team-members-container" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             </div>
         </div>
     </section>
@@ -451,100 +329,7 @@
                     Trusted by businesses worldwide for delivering exceptional web solutions
                 </p>
             </div>
-            <div class="grid lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <div class="flex items-center mb-6">
-                        <div class="flex text-yellow-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="text-nimbus-gray mb-6 italic">"Nimbus Tech transformed our online presence completely. Their technical expertise and strategic approach helped us achieve a 300% increase in sales within six months."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-nimbus-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold">JD</span>
-                        </div>
-                        <div>
-                            <div class="font-bold">John Davis</div>
-                            <div class="text-nimbus-gray text-sm">CEO, TechStart Inc.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <div class="flex items-center mb-6">
-                        <div class="flex text-yellow-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="text-nimbus-gray mb-6 italic">"The team at Nimbus Tech is truly exceptional. Their agile approach and commitment to quality ensured our SaaS platform was launched on time and exceeded our expectations."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-nimbus-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold">SM</span>
-                        </div>
-                        <div>
-                            <div class="font-bold">Sarah Miller</div>
-                            <div class="text-nimbus-gray text-sm">Founder, Innovate Now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl hover-lift">
-                    <div class="flex items-center mb-6">
-                        <div class="flex text-yellow-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="text-nimbus-gray mb-6 italic">"Working with Nimbus Tech was a game-changer for our corporate portal. Their profound technical understanding and seamless communication made the project a huge success."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-nimbus-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold">RW</span>
-                        </div>
-                        <div>
-                            <div class="font-bold">Robert Williams</div>
-                            <div class="text-nimbus-gray text-sm">CTO, Global Corp</div>
-                        </div>
-                    </div>
-                </div>
+            <div id="client-reviews-container" class="grid lg:grid-cols-3 gap-8">
             </div>
         </div>
     </section>
@@ -582,9 +367,9 @@
             </div>
             <div class="text-center mt-12">
                 <p class="text-nimbus-gray text-lg mb-4">Or reach us directly:</p>
-                <a href="mailto:info@nimbustech.com" class="text-nimbus-teal hover:underline text-xl font-semibold">info@nimbustech.com</a>
+                <a href="mailto:info@nimbussolutions.com" class="text-nimbus-teal hover:underline text-xl font-semibold">info@nimbussolutions.com</a>
                 <div class="flex justify-center mt-6 space-x-6">
-                    <a href="https://linkedin.com/company/nimbus-tech" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nimbus-teal transition-colors">
+                    <a href="https://linkedin.com/company/nimbus-solutions" target="_blank" rel="noopener noreferrer" class="text-white hover:text-nimbus-teal transition-colors">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
                         </svg>
@@ -599,13 +384,13 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">Insights from the Forefront of Web Innovation</h2>
                 <p class="text-xl text-nimbus-gray max-w-2xl mx-auto">
-                    Stay updated with the latest trends, technologies, and expert advice from Nimbus Tech.
+                    Stay updated with the latest trends, technologies, and expert advice from Nimbus Solutions.
                 </p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover-lift">
                     <div class="h-48 bg-gray-200 flex items-center justify-center text-nimbus-gray">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4-4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h5c.55 0 1-.45 1-1zm-3-4H9c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1zm3-4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h5c.55 0 1-.45 1-1z"/></svg>
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4-4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h5c.55 0 1-.45 1-1zm-3-4H9c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1zm3-4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h5c.55 0 1-.45 1-1zm-3-4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h5c.55 0 1-.45 1-1z"/></svg>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-3">The Power of Next.js for Enterprise Applications</h3>
@@ -641,26 +426,60 @@
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-8 h-8 bg-nimbus-gradient rounded-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-10 4.7 4.7 0 00-.1-1A5 5 0 008 3.5a4.88 4.88 0 00-4.5 3A4.1 4.1 0 003 15z"/>
-                        </svg>
-                    </div>
-                    <div class="text-lg font-bold">
-                        <span class="text-nimbus-blue">NIMBUS</span>
-                        <span class="text-white">TECH</span>
+                    <svg width="40" height="28" viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                        <defs>
+                            <linearGradient id="footerCloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="footerBarGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+                                <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="footerDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0.5" dy="1" stdDeviation="0.75" flood-color="#000000" flood-opacity="0.1"/>
+                            </filter>
+                        </defs>
+                        <g filter="url(#footerDropShadow)">
+                            <circle cx="50" cy="45" r="25" fill="url(#footerCloudGradient)"/>
+                            <circle cx="75" cy="40" r="28" fill="url(#footerCloudGradient)"/>
+                            <circle cx="100" cy="45" r="25" fill="url(#footerCloudGradient)"/>
+                            <circle cx="35" cy="55" r="18" fill="url(#footerCloudGradient)"/>
+                            <circle cx="65" cy="60" r="22" fill="url(#footerCloudGradient)"/>
+                            <circle cx="95" cy="60" r="20" fill="url(#footerCloudGradient)"/>
+                            <circle cx="115" cy="55" r="16" fill="url(#footerCloudGradient)"/>
+                            <circle cx="55" cy="30" r="15" fill="url(#footerCloudGradient)"/>
+                            <circle cx="85" cy="28" r="18" fill="url(#footerCloudGradient)"/>
+                        </g>
+                        <circle cx="20" cy="35" r="2" fill="#667eea" opacity="0.6"/>
+                        <circle cx="12" cy="50" r="3" fill="#764ba2" opacity="0.5"/>
+                        <circle cx="135" cy="30" r="2.5" fill="#667eea" opacity="0.7"/>
+                        <circle cx="145" cy="45" r="1.5" fill="#764ba2" opacity="0.6"/>
+                        <circle cx="130" cy="65" r="2" fill="#667eea" opacity="0.5"/>
+                        <rect x="45" y="70" width="4" height="12" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="53" y="65" width="4" height="17" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="61" y="68" width="4" height="14" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="69" y="62" width="4" height="20" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="77" y="66" width="4" height="16" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="85" y="64" width="4" height="18" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="93" y="69" width="4" height="13" rx="2" fill="url(#footerBarGradient)"/>
+                        <rect x="101" y="67" width="4" height="15" rx="2" fill="url(#footerBarGradient)"/>
+                    </svg>
+                    <div class="text-container" style="display: flex; flex-direction: column;">
+                        <div class="nimbus-text" style="font-size: 16px; font-weight: 700; color: #ffffff; letter-spacing: 0.5px; line-height: 1; margin: 0; font-family: inherit;">NIMBUS</div>
+                        <div class="solutions-text" style="font-size: 8px; font-weight: 400; color: #7f8c8d; letter-spacing: 1.5px; margin: 0; margin-top: 1px; font-family: inherit; text-transform: uppercase;">SOLUTIONS</div>
                     </div>
                 </div>
                 <p class="text-nimbus-gray text-sm leading-relaxed">
                     Building scalable, high-performance web applications for modern businesses worldwide.
                 </p>
                 <div class="flex space-x-4 mt-6">
-                    <a href="https://linkedin.com/company/nimbus-tech" target="_blank" rel="noopener noreferrer" class="text-nimbus-gray hover:text-nimbus-blue transition-colors">
+                    <a href="https://linkedin.com/company/nimbus-solutions" target="_blank" rel="noopener noreferrer" class="text-nimbus-gray hover:text-nimbus-blue transition-colors">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
-                    </div>
+                </div>
             </div>
 
             <div>
@@ -693,17 +512,17 @@
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-3 text-nimbus-teal" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                        <a href="mailto:info@nimbustech.com" class="hover:text-nimbus-blue transition-colors">info@nimbustech.com</a>
+                        <a href="mailto:info@nimbussolutions.com" class="hover:text-nimbus-blue transition-colors">info@nimbussolutions.com</a>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-3 text-nimbus-teal" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.75-.25 1.02l-2.2 2.2z"/></svg>
-                        <a href="tel:+15551234567" class="hover:text-nimbus-blue transition-colors">Your Phone Number</a> (Placeholder)
+                        <a href="tel:+15551234567" class="hover:text-nimbus-blue transition-colors">+1 (555) 123-4567</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="border-t border-gray-700 mt-8 pt-8 text-center text-nimbus-gray text-sm">
-            &copy; <span id="current-year"></span> Nimbus Tech. All rights reserved.
+            &copy; <span id="current-year"></span> Nimbus Solutions. All rights reserved.
         </div>
     </footer>
 
@@ -735,6 +554,208 @@
 
         // Update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- NEW JAVASCRIPT FOR DYNAMIC CONTENT ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to generate star icons
+            function generateStars(count) {
+                let starsHtml = '';
+                for (let i = 0; i < count; i++) {
+                    starsHtml += `<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>`;
+                }
+                return starsHtml;
+            }
+
+            // Populate Core Services
+            const coreServicesContainer = document.getElementById('core-services-container');
+            if (coreServicesContainer) {
+                coreServices.forEach(service => {
+                    const serviceDiv = document.createElement('div');
+                    serviceDiv.className = 'bg-white p-8 rounded-2xl hover-lift';
+                    serviceDiv.innerHTML = `
+                        <div class="w-16 h-16 bg-nimbus-gradient rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="${service.iconPath}"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">${service.title}</h3>
+                        <p class="text-nimbus-gray">${service.description}</p>
+                    `;
+                    coreServicesContainer.appendChild(serviceDiv);
+                });
+            }
+
+            // Populate Why Us Advantages
+            const whyUsContainer = document.getElementById('why-us-container');
+            if (whyUsContainer) {
+                whyUsAdvantages.forEach(advantage => {
+                    const advantageDiv = document.createElement('div');
+                    advantageDiv.className = 'flex items-start space-x-4';
+                    advantageDiv.innerHTML = `
+                        <div class="w-12 h-12 bg-nimbus-teal rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="${advantage.iconPath}"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">${advantage.title}</h3>
+                            <p class="text-nimbus-gray">${advantage.description}</p>
+                        </div>
+                    `;
+                    whyUsContainer.appendChild(advantageDiv);
+                });
+            }
+
+            // Populate Tech Stacks
+            const techStackContainer = document.getElementById('tech-stack-container');
+            if (techStackContainer) {
+                techStacks.forEach(stack => {
+                    const stackDiv = document.createElement('div');
+                    stackDiv.className = 'bg-white p-8 rounded-2xl hover-lift';
+                    let technologiesHtml = stack.technologies.map(tech => `
+                        <li class="flex items-center"><span class="w-2 h-2 bg-nimbus-teal rounded-full mr-3"></span>${tech}</li>
+                    `).join('');
+                    stackDiv.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4 text-nimbus-blue">${stack.category}</h3>
+                        <p class="text-nimbus-gray mb-6">${stack.description}</p>
+                        <ul class="space-y-2 text-nimbus-gray">
+                            ${technologiesHtml}
+                        </ul>
+                    `;
+                    techStackContainer.appendChild(stackDiv);
+                });
+            }
+
+            // Populate Development Philosophy
+            const philosophyContainer = document.getElementById('philosophy-container');
+            if (philosophyContainer) {
+                developmentPhilosophy.forEach(philosophy => {
+                    const philosophyDiv = document.createElement('div');
+                    philosophyDiv.className = 'text-center';
+                    philosophyDiv.innerHTML = `
+                        <div class="w-20 h-20 bg-nimbus-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="${philosophy.iconPath}"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">${philosophy.title}</h3>
+                        <p class="text-nimbus-gray">${philosophy.description}</p>
+                    `;
+                    philosophyContainer.appendChild(philosophyDiv);
+                });
+            }
+
+            // Populate Portfolio
+            const portfolioContainer = document.getElementById('portfolio-container');
+            if (portfolioContainer) {
+                portfolioItems.forEach(item => {
+                    const portfolioDiv = document.createElement('div');
+                    portfolioDiv.className = 'bg-white rounded-2xl overflow-hidden hover-lift';
+                    portfolioDiv.innerHTML = `
+                        <div class="h-48 bg-gradient-to-br ${item.gradientFrom} ${item.gradientTo}"></div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3">${item.title}</h3>
+                            <p class="text-nimbus-gray mb-4">${item.description}</p>
+                            <div class="text-nimbus-teal font-semibold">${item.achievement}</div>
+                        </div>
+                    `;
+                    portfolioContainer.appendChild(portfolioDiv);
+                });
+            }
+
+            // Populate Core Values
+            const coreValuesList = document.getElementById('core-values-list');
+            if (coreValuesList) {
+                coreValues.forEach(value => {
+                    const valueLi = document.createElement('li');
+                    valueLi.className = 'flex items-center';
+                    valueLi.innerHTML = `
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        ${value}
+                    `;
+                    coreValuesList.appendChild(valueLi);
+                });
+            }
+
+            // Populate Leadership Team
+            const leadershipTeamContainer = document.getElementById('leadership-team-container');
+            if (leadershipTeamContainer) {
+                leadershipTeam.forEach(member => {
+                    const memberDiv = document.createElement('div');
+                    memberDiv.className = 'bg-white p-8 rounded-2xl hover-lift';
+                    memberDiv.innerHTML = `
+                        <div class="w-24 h-24 bg-nimbus-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">${member.initials}</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">${member.name}</h4>
+                        <p class="text-nimbus-teal font-semibold mb-3">${member.title}</p>
+                        <p class="text-nimbus-gray">${member.description}</p>
+                    `;
+                    leadershipTeamContainer.appendChild(memberDiv);
+                });
+            }
+
+            // Populate Our Team (full team section)
+            const teamMembersContainer = document.getElementById('team-members-container');
+            if (teamMembersContainer) {
+                teamMembers.forEach(member => {
+                    const memberDiv = document.createElement('div');
+                    memberDiv.className = 'bg-white p-8 rounded-2xl hover-lift text-center';
+                    memberDiv.innerHTML = `
+                        <div class="w-24 h-24 bg-nimbus-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">${member.initials}</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">${member.name}</h4>
+                        <p class="text-nimbus-teal font-semibold mb-3">${member.title}</p>
+                        <p class="text-nimbus-gray">${member.description}</p>
+                    `;
+                    teamMembersContainer.appendChild(memberDiv);
+                });
+            }
+
+            // Populate Client Reviews
+            const clientReviewsContainer = document.getElementById('client-reviews-container');
+            if (clientReviewsContainer) {
+                clientReviews.forEach(review => {
+                    const reviewDiv = document.createElement('div');
+                    reviewDiv.className = 'bg-white p-8 rounded-2xl hover-lift';
+                    reviewDiv.innerHTML = `
+                        <div class="flex items-center mb-6">
+                            <div class="flex text-yellow-400">
+                                ${generateStars(review.stars)}
+                            </div>
+                        </div>
+                        <p class="text-nimbus-gray mb-6 italic">"${review.quote}"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-nimbus-gradient rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">${review.reviewerInitials}</span>
+                            </div>
+                            <div>
+                                <div class="font-bold">${review.reviewerName}</div>
+                                <div class="text-nimbus-gray text-sm">${review.reviewerTitle}</div>
+                            </div>
+                        </div>
+                    `;
+                    clientReviewsContainer.appendChild(reviewDiv);
+                });
+            }
+
+            // Update contact info in footer using companyInfo
+            const emailLink = document.querySelector('footer a[href^="mailto:"]');
+            if (emailLink) {
+                emailLink.href = `mailto:${companyInfo.email}`;
+                emailLink.textContent = companyInfo.email;
+            }
+            const phoneLink = document.querySelector('footer a[href^="tel:"]');
+            if (phoneLink) {
+                phoneLink.href = `tel:${companyInfo.phoneNumber.replace(/\s/g, '')}`;
+                phoneLink.textContent = companyInfo.phoneNumber;
+            }
+        });
     </script>
 </body>
 </html>
